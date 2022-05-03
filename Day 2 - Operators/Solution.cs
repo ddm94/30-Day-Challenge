@@ -14,7 +14,6 @@ using System;
 
 class Result
 {
-
     /*
      * Complete the 'solve' function below.
      *
@@ -33,7 +32,6 @@ class Result
                 
         Console.WriteLine(String.Format("{0:0}", total_cost));
     }
-
 }
 
 class Solution

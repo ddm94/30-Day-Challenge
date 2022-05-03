@@ -5,21 +5,25 @@ class Solution {
     
     public string PrintEven(string s)
     {
+		// Break down string into a sequence of characters 
         char[] c = s.ToCharArray();
-        
+        // String of even-indexed characters
         string even = "";
                                 
         for(int i = 0; i < s.Length; i++)
         {
+			// Even index
             if (i % 2 == 0)
             {
-              even += c[i].ToString();
+				// Assign the value with even index to our string
+				even += c[i].ToString();
             }
         }
         
         return even;
     }
     
+	// Same process as before, except we are checking for odd index
     public string PrintOdd(string s)
     {
         char[] c = s.ToCharArray();
@@ -30,7 +34,7 @@ class Solution {
         {
             if (i % 2 != 0)
             {
-              odd += c[i].ToString();
+				odd += c[i].ToString();
             }
         }
         

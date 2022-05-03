@@ -13,28 +13,23 @@ using System.Text;
 using System;
 
 class Solution
-{    
-    public void MultiplesOfNumber(int n) 
-    {
-        for(int i = 1; i < 11; i++)
+{ 
+    public void PrintReverse(List<int> arr)
+    {        
+        for(int i = arr.Count - 1; i >= 0; i--)
         {
-            Console.WriteLine(n + " x " + i + " = " + n * i);
-        }  
-    }
-    
-    public static void Multiples(int n)
-    {
-        for(int i = 1; i < 11; i++)
-        {
-            Console.WriteLine(n + " x " + i + " = " + n * i);
+            Console.Write(arr[i] + " ");
         }
     }
-
+        
     public static void Main(string[] args)
     {
         int n = Convert.ToInt32(Console.ReadLine().Trim());
-        Solution loop = new Solution();
-        loop.MultiplesOfNumber(n);
-        // Multiples(n);
+
+        List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+        
+        Solution solution = new Solution();
+        
+        solution.PrintReverse(arr);
     }
 }
