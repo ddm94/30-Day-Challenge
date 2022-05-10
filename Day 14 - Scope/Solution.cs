@@ -1,9 +1,8 @@
 using System;
 using System.Linq;
 
-class Difference 
-{
-	private int[] elements;
+class Difference {
+    private int[] elements;
     public int maximumDifference;
 
 	// Add your code here
@@ -29,12 +28,11 @@ class Difference
             }
         }
     }
+
 } // End of Difference Class
 
-class Solution 
-{
-    static void Main(string[] args) 
-	{
+class Solution {
+    static void Main(string[] args) {
         Convert.ToInt32(Console.ReadLine());
         
         int[] a = Console.ReadLine().Split(' ').Select(x=>Convert.ToInt32(x)).ToArray();
